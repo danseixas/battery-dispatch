@@ -1,0 +1,3 @@
+# Approach summary
+
+I developed the solution incrementally, starting with robust ingestion and normalization of the half-hourly and hourly price data, including the supplied daylight-saving timestamp conventions, then adding a physically constrained battery model, a transparent percentile-based heuristic, reproducible dispatch outputs, and operating-cost/degradation reporting. The final benchmark uses a mixed-integer optimization model to maximize historical trading cashflow across both markets while enforcing battery power, energy capacity, charge/discharge efficiency, mutually exclusive operating modes, and Market 2's hourly commitment structure; it is explicitly a perfect-foresight backtest rather than a real-time trading strategy.
